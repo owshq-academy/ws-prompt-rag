@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  langflow:
+    image: langflowai/langflow:latest
+    ports:
+      - "7860:7860"
+    environment:
+      - LANGFLOW_DATABASE_URL=sqlite:////app/data/langflow.db
+      - LANGFLOW_CONFIG_DIR=/app/data
+      - LANGFLOW_LOG_LEVEL=info
+    volumes:
+      - ./data:/app/data
+    command: langflow run --host 0.0.0.0 --port 7860
+    restart: unless-stopped
+
+  # Optional: PostgreSQL for production use
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: langflow
+      POSTGRES_PASSWORD: langflow
+      POSTGRES_DB: langflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
