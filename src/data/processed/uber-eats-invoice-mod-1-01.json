@@ -1,0 +1,135 @@
+{
+  "schema": {
+    "fields": [
+      {
+        "name": "Invoice Date and Time",
+        "type": "DateTime",
+        "description": "The date and time the invoice was issued"
+      },
+      {
+        "name": "Invoice Number",
+        "type": "Integer",
+        "description": "The unique identifier for the invoice"
+      },
+      {
+        "name": "Order ID",
+        "type": "String",
+        "description": "The unique identifier for the order"
+      },
+      {
+        "name": "Restaurant Name",
+        "type": "String",
+        "description": "The name of the restaurant where the order was placed"
+      },
+      {
+        "name": "Restaurant Rating",
+        "type": "Float",
+        "description": "The rating of the restaurant"
+      },
+      {
+        "name": "Restaurant Address",
+        "type": "String",
+        "description": "The address of the restaurant"
+      },
+      {
+        "name": "Restaurant Phone Number",
+        "type": "String",
+        "description": "The contact number of the restaurant"
+      },
+      {
+        "name": "Restaurant CNPJ",
+        "type": "String",
+        "description": "The National Register of Legal Entities (CNPJ) of the restaurant"
+      },
+      {
+        "name": "Restaurant UUID",
+        "type": "String",
+        "description": "The unique identifier for the restaurant"
+      },
+      {
+        "name": "Order Items",
+        "type": "Array",
+        "description": "The list of items ordered"
+      },
+      {
+        "name": "Payment Summary",
+        "type": "Object",
+        "description": "The summary of the payment including subtotal, delivery fee, service fee, discount, tip, and total"
+      },
+      {
+        "name": "Delivery Details",
+        "type": "Object",
+        "description": "The details of the delivery including delivery address, customer ID, GPS tracking ID, delivery time, and distance traveled"
+      },
+      {
+        "name": "Payment Method",
+        "type": "String",
+        "description": "The method of payment used"
+      },
+      {
+        "name": "Transaction ID",
+        "type": "String",
+        "description": "The unique identifier for the transaction"
+      },
+      {
+        "name": "Rating Code",
+        "type": "String",
+        "description": "The code to rate the experience"
+      }
+    ]
+  },
+  "data": {
+    "Invoice Date and Time": "15 de março de 2024 às 20:35",
+    "Invoice Number": 7834,
+    "Order ID": "a3f4d2c1-8b9e-4f5a-b7c3-d9e8f2a1b4c5",
+    "Restaurant Name": "Le Bistrot Parisien",
+    "Restaurant Rating": 4.8,
+    "Restaurant Address": "Rua Oscar Freire, 384 - Jardins, São Paulo - SP, CEP: 01426-000",
+    "Restaurant Phone Number": "(11) 3062-4567",
+    "Restaurant CNPJ": "12.345.678/0001-90",
+    "Restaurant UUID": "rest-9f8e7d6c-5b4a-3c2b-1a0f",
+    "Order Items": [
+      {
+        "item": "Coq au Vin",
+        "price": 42.9,
+        "details": [
+          "Acompanhamento: Purê de batatas",
+          "Ponto da carne: Bem passado"
+        ]
+      },
+      {
+        "item": "Sopa de Cebola Gratinada",
+        "price": 18.5,
+        "details": [
+          "Extra queijo gruyère"
+        ]
+      },
+      {
+        "item": "Vinho Tinto Taça (Malbec)",
+        "price": 22.0
+      },
+      {
+        "item": "Café Expresso",
+        "price": 6.9
+      }
+    ],
+    "Payment Summary": {
+      "Subtotal": 90.3,
+      "Delivery Fee": 4.99,
+      "Service Fee": 5.0,
+      "Discount": -15.0,
+      "Tip": 13.55,
+      "Total": 98.84
+    },
+    "Delivery Details": {
+      "Delivery Address": "Alameda Santos, 1287 - Apto 142, Cerqueira César, São Paulo - SP, CEP: 01419-001",
+      "Customer ID": "***.*45.678-**",
+      "GPS Tracking ID": "gps-7f6e5d4c-3b2a-1c0b",
+      "Delivery Time": "28 minutos",
+      "Distance Traveled": "4.2 km"
+    },
+    "Payment Method": "Cartão de Crédito terminado em 4242",
+    "Transaction ID": "pay-9a8b7c6d-5e4f-3a2b-1c0d",
+    "Rating Code": "rate-5d4c3b2a-1f0e"
+  }
+}
