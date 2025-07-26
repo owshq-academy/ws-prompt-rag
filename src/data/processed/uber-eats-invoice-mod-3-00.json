@@ -1,0 +1,227 @@
+{
+  "schema": {
+    "fields": [
+      {
+        "name": "invoice_date_time",
+        "type": "datetime",
+        "description": "Date and time of the invoice"
+      },
+      {
+        "name": "invoice_id",
+        "type": "string",
+        "description": "Unique identifier of the invoice"
+      },
+      {
+        "name": "order_id",
+        "type": "string",
+        "description": "Unique identifier of the order"
+      },
+      {
+        "name": "restaurant_name",
+        "type": "string",
+        "description": "Name of the restaurant"
+      },
+      {
+        "name": "restaurant_address",
+        "type": "string",
+        "description": "Address of the restaurant"
+      },
+      {
+        "name": "restaurant_phone",
+        "type": "string",
+        "description": "Phone number of the restaurant"
+      },
+      {
+        "name": "restaurant_rating",
+        "type": "float",
+        "description": "Rating of the restaurant"
+      },
+      {
+        "name": "restaurant_cuisine",
+        "type": "string",
+        "description": "Cuisine type of the restaurant"
+      },
+      {
+        "name": "restaurant_cnpj",
+        "type": "string",
+        "description": "CNPJ of the restaurant"
+      },
+      {
+        "name": "restaurant_uuid",
+        "type": "string",
+        "description": "UUID of the restaurant"
+      },
+      {
+        "name": "restaurant_hours",
+        "type": "string",
+        "description": "Operating hours of the restaurant"
+      },
+      {
+        "name": "order_items",
+        "type": "array",
+        "description": "List of items ordered"
+      },
+      {
+        "name": "subtotal",
+        "type": "float",
+        "description": "Subtotal of the order"
+      },
+      {
+        "name": "delivery_fee",
+        "type": "float",
+        "description": "Delivery fee for the order"
+      },
+      {
+        "name": "service_fee",
+        "type": "float",
+        "description": "Service fee for the order"
+      },
+      {
+        "name": "tip",
+        "type": "float",
+        "description": "Tip given to the driver"
+      },
+      {
+        "name": "driver_id",
+        "type": "string",
+        "description": "ID of the driver"
+      },
+      {
+        "name": "total",
+        "type": "float",
+        "description": "Total amount of the order"
+      },
+      {
+        "name": "delivery_address",
+        "type": "string",
+        "description": "Address where the order was delivered"
+      },
+      {
+        "name": "delivery_zip",
+        "type": "string",
+        "description": "Zip code of the delivery address"
+      },
+      {
+        "name": "customer_cpf",
+        "type": "string",
+        "description": "CPF of the customer"
+      },
+      {
+        "name": "delivery_time",
+        "type": "integer",
+        "description": "Time taken for delivery"
+      },
+      {
+        "name": "delivery_distance",
+        "type": "float",
+        "description": "Distance covered for delivery"
+      },
+      {
+        "name": "average_speed",
+        "type": "float",
+        "description": "Average speed of the delivery"
+      },
+      {
+        "name": "coordinates",
+        "type": "string",
+        "description": "Coordinates of the delivery location"
+      },
+      {
+        "name": "altitude",
+        "type": "integer",
+        "description": "Altitude of the delivery location"
+      },
+      {
+        "name": "payment_method",
+        "type": "string",
+        "description": "Payment method used for the order"
+      },
+      {
+        "name": "transaction_id",
+        "type": "string",
+        "description": "Transaction ID of the payment"
+      },
+      {
+        "name": "rating_code",
+        "type": "string",
+        "description": "Code to rate the order"
+      },
+      {
+        "name": "company_name",
+        "type": "string",
+        "description": "Name of the company"
+      },
+      {
+        "name": "company_cnpj",
+        "type": "string",
+        "description": "CNPJ of the company"
+      },
+      {
+        "name": "invoice_timestamp",
+        "type": "string",
+        "description": "Timestamp of the invoice"
+      },
+      {
+        "name": "invoice_version",
+        "type": "string",
+        "description": "Version of the invoice"
+      }
+    ]
+  },
+  "data": {
+    "invoice_date_time": "25 de julho de 2025 às 20:15",
+    "invoice_id": "A3F2-B8C1",
+    "order_id": "a3f2e7d9-b8c1-4a5e-9d2f-6b4c8e3a7f92",
+    "restaurant_name": "Trattoria Bella Italia",
+    "restaurant_address": "Rua Curitiba, 1255, Lourdes - Belo Horizonte",
+    "restaurant_phone": "(31) 3284-9876",
+    "restaurant_rating": 4.9,
+    "restaurant_cuisine": "Italiano",
+    "restaurant_cnpj": "23.456.789/0001-12",
+    "restaurant_uuid": "rest_5k2m9x7p",
+    "restaurant_hours": "18h-00h",
+    "order_items": [
+      {
+        "name": "Risotto ai Frutti di Mare",
+        "quantity": 1,
+        "price": 62.0
+      },
+      {
+        "name": "Bruschetta Mista (6 unid)",
+        "quantity": 1,
+        "price": 28.0
+      },
+      {
+        "name": "Vinho Chianti Classico (taça)",
+        "quantity": 2,
+        "price": 32.0
+      },
+      {
+        "name": "Água San Pellegrino 500ml",
+        "quantity": 1,
+        "price": 12.0
+      }
+    ],
+    "subtotal": 134.0,
+    "delivery_fee": 8.9,
+    "service_fee": 6.7,
+    "tip": 20.0,
+    "driver_id": "driver_m7s3n4k2",
+    "total": 169.6,
+    "delivery_address": "Avenida do Contorno, 2905, Cobertura, Santo Agostinho - Belo Horizonte/MG",
+    "delivery_zip": "30110-080",
+    "customer_cpf": "***.***-423-**",
+    "delivery_time": 28,
+    "delivery_distance": 3.7,
+    "average_speed": 31.2,
+    "coordinates": "-19.9405, -43.9312",
+    "altitude": 889,
+    "payment_method": "Visa •••• 7263",
+    "transaction_id": "pay_3f2e8-9a1b5-2k7m4",
+    "rating_code": "rate_a3f2e7d9",
+    "company_name": "Uber do Brasil Tecnologia Ltda.",
+    "company_cnpj": "17.895.646/0001-87",
+    "invoice_timestamp": "25/07/2025 20:15:48",
+    "invoice_version": "v2.4.1"
+  }
+}
