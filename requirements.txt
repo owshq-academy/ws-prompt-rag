@@ -38,7 +38,7 @@ pydantic==2.8.2  # Data validation
 pydantic-settings==2.4.0  # Settings management
 
 # Database Support
-sqlalchemy==2.0.31  # SQL toolkit
+sqlalchemy>=1.4.36,<2.0  # SQL toolkit
 pymongo==4.8.0  # MongoDB driver
 redis==5.0.8  # Redis client
 
