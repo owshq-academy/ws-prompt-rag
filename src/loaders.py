@@ -6,6 +6,7 @@ import pandas as pd
 logging.getLogger("pdfminer").setLevel(logging.CRITICAL)
 logging.getLogger("pdfplumber").setLevel(logging.CRITICAL)
 
+
 def load_invoice_text(filepath: str) -> str:
     if not filepath.lower().endswith(".pdf"):
         raise ValueError("Only PDF supported")

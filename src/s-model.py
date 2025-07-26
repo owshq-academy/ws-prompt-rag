@@ -3,6 +3,7 @@ from langchain_openai import OpenAI
 from src.prompts import PromptTemplate
 from langchain_core.runnables.base import RunnableSequence
 
+
 def main():
     # TODO Load .env with your OPENAI_API_KEY
     load_dotenv()

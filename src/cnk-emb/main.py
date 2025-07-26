@@ -8,8 +8,10 @@ from utils.chunking_strategies import (
     context_aware_chunking
 )
 
+
 def load_pdf_text(pdf_path):
     return extract_text(pdf_path)
+
 
 def preview_chunks(name, chunks, n=3):
     print(f"\n{name} (showing {n} chunks):")

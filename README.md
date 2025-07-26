@@ -1,4 +1,4 @@
-# ws-prompt-rag
+# Workshop: Prompt Engineering & RAG (Retrieval-Augmented Generation)
 
 A modular Retrieval-Augmented Generation (RAG) system for document analysis, prompt engineering, and data management. Designed for research, prototyping, and production workflows involving invoices, PDFs, and custom prompts.
 
@@ -114,4 +114,3 @@ Distributed under the MIT License. See [LICENSE](#) for details.
 
 ---
 For questions or support, open an issue or contact the maintainer.
-
