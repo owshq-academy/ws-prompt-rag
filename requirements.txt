@@ -1,0 +1,72 @@
+# Core LangChain packages
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-text-splitters>=0.2.0
+
+# LLM Providers (uncomment the ones you need)
+langchain-openai>=0.1.0  # For OpenAI models
+# langchain-anthropic>=0.1.0  # For Claude models
+# langchain-google-genai>=1.0.0  # For Google AI models
+# langchain-huggingface>=0.0.1  # For HuggingFace models
+
+# Vector Stores (uncomment the ones you need)
+chromadb>=0.4.0  # Chroma vector store (use chromadb instead of langchain-chroma)
+# pinecone-client>=3.0.0  # Pinecone vector store
+# qdrant-client>=1.9.0  # Qdrant vector store
+# weaviate-client>=4.0.0  # Weaviate vector store
+# faiss-cpu>=1.8.0  # FAISS vector store (CPU version)
+
+# Document Loaders and Processing
+pypdf==4.3.1  # PDF processing
+python-docx==1.1.2  # Word documents
+openpyxl==3.1.5  # Excel files
+beautifulsoup4==4.12.3  # Web scraping
+markdownify==0.13.1  # HTML to Markdown
+unstructured==0.15.1  # General document processing
+
+# WebSocket Support
+websockets==12.0  # WebSocket client/server
+fastapi==0.111.0  # Modern web framework
+uvicorn[standard]==0.30.5  # ASGI server
+python-socketio==5.11.3  # Socket.IO support (alternative to raw websockets)
+
+# API and Async Support
+httpx==0.27.0  # Modern HTTP client
+aiohttp==3.10.5  # Async HTTP client/server
+pydantic==2.8.2  # Data validation
+pydantic-settings==2.4.0  # Settings management
+
+# Database Support
+sqlalchemy==2.0.31  # SQL toolkit
+pymongo==4.8.0  # MongoDB driver
+redis==5.0.8  # Redis client
+
+# Embeddings and ML
+tiktoken==0.7.0  # OpenAI tokenizer
+sentence-transformers==3.0.1  # Sentence embeddings
+numpy==1.26.4  # Numerical computing
+pandas==2.2.2  # Data manipulation
+
+# Environment and Configuration
+python-dotenv==1.0.1  # Load .env files
+pyyaml==6.0.2  # YAML configuration
+
+# Utilities
+tenacity==8.5.0  # Retry logic
+colorama==0.4.6  # Colored terminal output
+tqdm==4.66.5  # Progress bars
+loguru==0.7.2  # Better logging
+
+# Development Dependencies
+pytest==8.3.2  # Testing framework
+pytest-asyncio==0.23.8  # Async test support
+black==24.8.0  # Code formatter
+flake8==7.1.1  # Linting
+mypy==1.11.1  # Type checking
+ipython==8.26.0  # Interactive shell
+
+# Optional: Advanced RAG Components
+# llama-index==0.11.0  # Alternative RAG framework
+# guardrails-ai==0.5.0  # LLM output validation
+# semantic-kernel==1.0.0  # Microsoft's orchestration
