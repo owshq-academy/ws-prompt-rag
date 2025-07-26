@@ -1,5 +1,3 @@
-# src/langchain/chains.py
-
 from langchain_openai import ChatOpenAI
 from langchain_core.runnables.base import RunnableSequence
 from .prompts import INVOICE_SCHEMA_PROMPT, INVOICE_EXTRACTION_PROMPT, PROJECT_SUMMARY_PROMPT
@@ -11,7 +9,7 @@ def build_invoice_pipeline(model_name: str = "gpt-4", temperature: float = 0.0, 
     1) schema_seq: infer a JSON schema from invoice text
     2) extract_seq: extract invoice data per schema
     """
-    # Use ChatOpenAI for chat completions endpoint
+
     llm = ChatOpenAI(model_name=model_name, temperature=temperature, max_tokens=max_tokens)
 
     schema_seq  = RunnableSequence(INVOICE_SCHEMA_PROMPT, llm)

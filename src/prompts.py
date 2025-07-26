@@ -1,6 +1,6 @@
 from langchain.prompts import PromptTemplate
 
-# 1️⃣ Schema discovery: force JSON-only output in a code fence
+# TODO 1️⃣ Schema discovery: force JSON-only output in a code fence
 INVOICE_SCHEMA_PROMPT = PromptTemplate(
     input_variables=["invoice_text"],
     template="""
@@ -27,7 +27,7 @@ Invoice Text:
 """.strip(),
 )
 
-# 2️⃣ Extraction: force JSON-only output wrapped in backticks
+# TODO 2️⃣ Extraction: force JSON-only output wrapped in backticks
 INVOICE_EXTRACTION_PROMPT = PromptTemplate(
     input_variables=["invoice_text", "schema_json"],
     template="""
@@ -45,7 +45,7 @@ Invoice Text:
 """.strip(),
 )
 
-# 3️⃣ Project summary: remind the LLM of the workflow and ask next-step suggestion
+# TODO 3️⃣ Project summary: remind the LLM of the workflow and ask next-step suggestion
 PROJECT_SUMMARY_PROMPT = PromptTemplate(
     input_variables=[],
     template="""

@@ -1,4 +1,4 @@
-# 🧾 Prompt Set for Invoice Extraction – UberEats (LLM-Focused)
+# Prompt Set for Invoice Extraction – UberEats (LLM-Focused)
 
 This repository contains **7 thoughtfully designed prompts** for structured data extraction from UberEats invoices. Each prompt is tailored to handle varying levels of document complexity — from clean text-based PDFs to scanned images with handwritten text — using different LLM prompting techniques.
 

@@ -1,5 +1,3 @@
-# src/RAG/retriever.py
-
 import os
 from dotenv import load_dotenv
 from pinecone import Pinecone
@@ -17,12 +15,10 @@ from src.RAG.configs import (
 )
 from src.RAG.ingest import load_documents
 
-# Suppress LangChain deprecation warnings about Pinecone
 import warnings
 from langchain_core._api.deprecation import LangChainDeprecationWarning
 warnings.filterwarnings("ignore", category=LangChainDeprecationWarning)
 
-# Load environment variables for Pinecone and OpenAI
 load_dotenv()
 
 
@@ -37,24 +33,23 @@ def build_retriever(
     """
     model = embedding_model or EMBEDDING_MODEL
 
-    # 1) Load and split documents
+    # TODO 1) Load and split documents
     docs = load_documents()
     splitter = CharacterTextSplitter(chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
     chunks = splitter.split_documents(docs)
 
-    # 2) Embedding setup — always use OpenAI embeddings
+    # TODO 2) Embedding setup — always use OpenAI embeddings
     emb = OpenAIEmbeddings(model=model)
 
-    # 3) Build vector store
+    # TODO 3) Build vector store
     if use_pinecone:
-        # Instantiate Pinecone client (index must already exist)
+
         pc = Pinecone(
             api_key=os.getenv("PINECONE_API_KEY"),
             environment=os.getenv("PINECONE_ENVIRONMENT")
         )
         pine_index = pc.Index(PINECONE_INDEX_NAME)
 
-        # Use the LangChain Pinecone wrapper
         vectordb = PineconeVectorStore(
             pine_index,
             embedding=emb,
@@ -63,7 +58,6 @@ def build_retriever(
         )
         vectordb.add_documents(chunks)
     else:
-        # Fallback to Chroma (local persistence)
         from langchain.vectorstores import Chroma
 
         base_dir = Path(__file__).parent / "vectordb"
