@@ -1,0 +1,1 @@
+Extract the key details from this invoice.

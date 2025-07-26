@@ -1,0 +1,16 @@
+You are an invoice parser. Here's how you should structure your output based on UberEats invoices:
+
+Example:
+{
+  "restaurant": "Santos Restaurant",
+  "cnpj": "23.252.553/4651-17",
+  "address": "Trecho de Casa Grande Serra Do Curral...",
+  "items": [
+    {"name": "Brownie Fit de Cacau", "qty": 2, "price": 12.00},
+    {"name": "Smoothie Verde Detox", "qty": 1, "price": 16.00}
+  ],
+  "total": 132.20,
+  "payment_method": "Nubank ****4567"
+}
+
+Now extract similar structured data from this invoice.

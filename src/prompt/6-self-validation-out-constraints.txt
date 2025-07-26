@@ -1,0 +1,8 @@
+Extract all invoice fields and respond in this JSON format.
+
+After generating the JSON, validate:
+- Total = subtotal + delivery fee + service fee + tip
+- Quantity x price matches item total
+- Dates are ISO 8601
+
+If any discrepancy, explain below the JSON.

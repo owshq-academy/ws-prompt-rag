@@ -1,0 +1,9 @@
+This invoice may contain text that mimics handwriting or cursive fonts.
+
+Please:
+1. Run OCR carefully over all elements.
+2. Ensure no fields are skipped because of font.
+3. Double-check values like driver name and payment ID.
+4. Output structured data in JSON.
+
+Highlight any data that was unclear or hard to read.

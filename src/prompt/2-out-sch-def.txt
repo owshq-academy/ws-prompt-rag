@@ -1,0 +1,21 @@
+Please extract the following fields from the attached UberEats invoice and respond in JSON:
+
+- Restaurant Name
+- CNPJ
+- Address
+- Phone
+- Order ID
+- Ordered Items (Name, Quantity, Price, Description)
+- Total Amount
+- Delivery Fee
+- Service Fee
+- Tip (Name + Value)
+- Payment Method
+- Transaction ID
+- Delivery Address
+- Delivery Time (minutes)
+- Distance (km)
+- Average Speed (km/h)
+- Coordinates (lat, long)
+
+Respond ONLY in JSON.
