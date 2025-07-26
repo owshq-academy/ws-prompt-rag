@@ -1,0 +1,7 @@
+langchain
+openai
+tiktoken
+pdfminer.six
+nltk
+sentence-transformers
+scikit-learn
